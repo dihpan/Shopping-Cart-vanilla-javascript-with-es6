@@ -1,0 +1,64 @@
+@mixin flexgan($space, $align) {
+  display: flex;
+  justify-content: $space;
+  align-items: $align;
+}
+
+.container {
+  margin-top: 10vh;
+
+  .ee {
+    margin: 5px auto;
+  }
+}
+
+.columns {
+  display: block;
+  justify-content: space-around;
+  // flex-wrap: wrap;
+  // text-align: center;
+
+  .column {
+    margin: 0 10px;
+
+    .detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .pesan {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+.inti-ranjang {
+  text-align: center;
+}
+
+.title-ranjang {
+  @include flexgan(space-around, start);
+}
+
+.item-baris {
+  @include flexgan(space-around, center);
+  flex-basis: 100%;
+  text-align: center;
+  margin: 5vh auto;
+
+  .kolom-quantiti {
+    flex-basis: 5vw;
+  }
+}
+
+.total-barang {
+  max-width: 64vw;
+  margin: auto;
+  text-align: right;
+}
+
+#belikan {
+  text-align: center;
+  margin: 25px 0;
+}
