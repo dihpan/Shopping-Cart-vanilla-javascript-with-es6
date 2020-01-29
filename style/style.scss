@@ -62,3 +62,13 @@
   text-align: center;
   margin: 25px 0;
 }
+
+@media (max-width: 720px) {
+  .item-baris {
+    padding: 5px;
+    .kolom-quantiti,
+    .hapus {
+      max-width: 100px;
+    }
+  }
+}

@@ -78,4 +78,14 @@
   text-align: center;
   margin: 25px 0;
 }
+
+@media (max-width: 720px) {
+  .item-baris {
+    padding: 5px;
+  }
+  .item-baris .kolom-quantiti,
+  .item-baris .hapus {
+    max-width: 100px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

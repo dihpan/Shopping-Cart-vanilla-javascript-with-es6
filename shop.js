@@ -10,9 +10,8 @@ class Shop {
     let items = document.querySelector('.items');
     let titleItem = document.querySelectorAll('.pepega');
     titleItem.forEach(t => {
-      if (t.textContent === this.item) {
-        alert('Item ini Sudah Ada');
-        return;
+      if (t.textContent === this.title) {
+        return alert('Item ini Sudah Ada');
       }
     });
     let rowKonten = `
@@ -24,7 +23,7 @@ class Shop {
       <h1 class="title is-5 harga">${this.harga}</h1>
       <div class="kolom-quantiti">
           <input type="number" class="input quantiti" value="1">
-          <button class="button is-danger hapus">Hapus Pesanan</button>
+          <button class="button is-danger hapus">Hapus</button>
       </div>
     </div>
     `;
