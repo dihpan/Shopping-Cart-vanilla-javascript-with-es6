@@ -1,3 +1,9 @@
+const burger = document.querySelector('.burger');
+
+burger.addEventListener('click', () => {
+  document.querySelector('.navbar-menu').classList.toggle('is-active');
+});
+
 class Shop {
   constructor(title, harga, gambar) {
     this.title = title;
