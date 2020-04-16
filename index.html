@@ -1,121 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-    <script src="shop.js" async></script>
-    <title>shooping</title>
-  </head>
 
-  <body>
-    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <h1 class="title" style="color: #fff;">Nasi Tempik</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" />
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="shop.js" async></script>
+  <title>Shopping Cart ES6</title>
+</head>
+
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <h1 class="title" style="color: #fff;">Nasi Tempik</h1>
+      </a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
         </a>
-    
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+        <a class="navbar-item">
+          Cart
         </a>
-      </div>
-    
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item">
-            Home
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Menu
           </a>
-    
-          <a class="navbar-item">
-            Cart
-          </a>
-    
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              Menu
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              Nasi Goreng
             </a>
-    
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                Nasi Goreng
-              </a>
-              <a class="navbar-item">
-                Nasi Bakar
-              </a>
-              <a class="navbar-item">
-                Nasi Kucing
-              </a>
-            </div>
+            <a class="navbar-item">
+              Nasi Bakar
+            </a>
+            <a class="navbar-item">
+              Nasi Kucing
+            </a>
           </div>
         </div>
-    </nav>
-    <div class="container">
-      <div class="columns">
-        <div class="column is-3 box has-text-centered">
-          <div class="makanan">
-            <h1 class="is-5 nama">Nasi Goreng</h1>
-            <img src="img/goreng.jpg" alt="" class="image ee is-128x128" />
-            <div class="detail">
-              <span class="harga-makan">Rp10.328</span>
-              <button class="button is-primary pesan">Pesan</button>
-            </div>
+      </div>
+  </nav>
+  <div class="container">
+    <div class="columns">
+      <div class="column is-3 box has-text-centered">
+        <div class="makanan">
+          <h1 class="is-5 nama">Nasi Goreng</h1>
+          <img src="img/goreng.jpg" alt="" class="image ee is-128x128" />
+          <div class="detail">
+            <span class="harga-makan">Rp10.328</span>
+            <button class="button is-primary pesan">Pesan</button>
           </div>
         </div>
-        <div class="column is-3 box has-text-centered">
-          <div class="makanan">
-            <h1 class="is-5 nama">Nasi Kucing</h1>
-            <img src="img/kucing.jpg" alt="" class="image ee is-128x128" />
-            <div class="detail">
-              <span class="harga-makan">Rp5.682</span>
-              <button class="button is-primary pesan">Pesan</button>
-            </div>
+      </div>
+      <div class="column is-3 box has-text-centered">
+        <div class="makanan">
+          <h1 class="is-5 nama">Nasi Kucing</h1>
+          <img src="img/kucing.jpg" alt="" class="image ee is-128x128" />
+          <div class="detail">
+            <span class="harga-makan">Rp5.682</span>
+            <button class="button is-primary pesan">Pesan</button>
           </div>
         </div>
-        <div class="column is-3 box has-text-centered">
-          <div class="makanan">
-            <h1 class="is-5 nama">Nasi Bakar</h1>
-            <img src="img/bakar.jpg" alt="" class="image ee is-128x128" />
-            <div class="detail">
-              <span class="harga-makan">Rp25.743</span>
-              <button class="button is-primary pesan">Pesan</button>
-            </div>
+      </div>
+      <div class="column is-3 box has-text-centered">
+        <div class="makanan">
+          <h1 class="is-5 nama">Nasi Bakar</h1>
+          <img src="img/bakar.jpg" alt="" class="image ee is-128x128" />
+          <div class="detail">
+            <span class="harga-makan">Rp25.743</span>
+            <button class="button is-primary pesan">Pesan</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <section class="ranjang">
-        <h1 class="title is-3 inti-ranjang">Keranjang</h1>
-        <hr class="is-divider" />
-        <div class="title-ranjang">
-          <h1 class="title is-5">Makanan</h1>
-          <h1 class="title is-5">Harga</h1>
-          <h1 class="title is-5">Jumlah</h1>
-        </div>
-        <section class="barang">
-          <div class="items"></div>
-        </section>
-        <hr class="is-divider" />
-        <div class="total-barang">
-          <h1 class="title is-3">Total</h1>
-          <!-- <br> -->
-          <h1 class="subtitle is-4 totalgan"></h1>
-        </div>
+  </div>
+  <div class="container">
+    <section class="ranjang">
+      <h1 class="title is-3 inti-ranjang">Keranjang</h1>
+      <hr class="is-divider" />
+      <div class="title-ranjang">
+        <h1 class="title is-5">Makanan</h1>
+        <h1 class="title is-5">Harga</h1>
+        <h1 class="title is-5">Jumlah</h1>
+      </div>
+      <section class="barang">
+        <div class="items"></div>
       </section>
-    </div>
-    <div class="container">
-      <section id="belikan">
-        <button class="button is-info is-large is-outlined tombol_beli">
-          Buy It!
-        </button>
-      </section>
-    </div>
-  </body>
+      <hr class="is-divider" />
+      <div class="total-barang">
+        <h1 class="title is-3">Total</h1>
+        <!-- <br> -->
+        <h1 class="subtitle is-4 totalgan"></h1>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <section id="belikan">
+      <button class="button is-info is-large is-outlined tombol_beli">
+        Buy It!
+      </button>
+    </section>
+  </div>
+</body>
+
 </html>

@@ -13,6 +13,8 @@ class Shop {
     this.gambar = gambar;
   }
 
+
+  // method addToCart
   addToCart() {
     let row = document.createElement( 'div' );
     let items = document.querySelector( '.items' );
